@@ -1,26 +1,25 @@
 package com.bridgelabz;
 
-public class FindMaximumNumbers {
+public class FindMaximumNumbers<K extends Comparable<K>> {
 
-	void getMax(String s1, String s2, String s3, String s4) {
-		String max = s1;
-		if (s2.compareTo(max) > 0)
-			max = s2;
-		if (s3.compareTo(max) > 0)
-			max = s3;
-		if (s4.compareTo(max) > 0)
-			max = s4;
+	void getMax(K n1, K n2, K n3, K n4) {
+		K max = n1;
+		if (n2.compareTo(max) > 0)
+			max = n2;
+		if (n3.compareTo(max) > 0)
+			max = n3;
+		if (n4.compareTo(max) > 0)
+			max = n4;
 		printMax(max);
 	}
 
-	private void printMax(String value) {
+	void printMax(K value) {
 		System.out.println("maximum= " + value);
-
 	}
 
 	public static void main(String[] args) {
 
-		FindMaximumNumbers maximum = new FindMaximumNumbers();
+		FindMaximumNumbers<String> maximum = new FindMaximumNumbers<String>();
 
 		String s1, s2, s3, s4;
 		s1 = "Apple";
