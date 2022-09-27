@@ -19,7 +19,21 @@ public class FindMaximumNumbers<K extends Comparable<K>> {
 
 	public static void main(String[] args) {
 
-		FindMaximumNumbers<String> maximum = new FindMaximumNumbers<String>();
+		  FindMaximumNumbers maximum=new FindMaximumNumbers();
+
+		Integer num1, num2, num3, num4;
+		num1 = 5;
+		num2 = 9;
+		num3 = 7;
+		num4 = 3;
+		maximum.getMax(num1, num2, num3, num4);
+
+		Float f1, f2, f3, f4;
+		f1 = 5.1f;
+		f2 = 6.2f;
+		f3 = 10.5f;
+		f4 = 2.35f;
+		maximum.getMax(f1, f2, f3, f4);
 
 		String s1, s2, s3, s4;
 		s1 = "Apple";
