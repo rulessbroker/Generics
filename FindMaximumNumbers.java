@@ -2,18 +2,18 @@ package com.bridgelabz;
 
 public class FindMaximumNumbers {
 
-	void getMax(Float f1, Float f2, Float f3, Float f4) {
-		Float max = f1;
-		if (f2.compareTo(max) > 0)
-			max = f2;
-		if (f3.compareTo(max) > 0)
-			max = f3;
-		if (f4.compareTo(max) > 0)
-			max = f4;
+	void getMax(String s1, String s2, String s3, String s4) {
+		String max = s1;
+		if (s2.compareTo(max) > 0)
+			max = s2;
+		if (s3.compareTo(max) > 0)
+			max = s3;
+		if (s4.compareTo(max) > 0)
+			max = s4;
 		printMax(max);
 	}
 
-	private void printMax(Float value) {
+	private void printMax(String value) {
 		System.out.println("maximum= " + value);
 
 	}
@@ -22,11 +22,11 @@ public class FindMaximumNumbers {
 
 		FindMaximumNumbers maximum = new FindMaximumNumbers();
 
-		Float f1, f2, f3, f4;
-		f1 = 5.1f;
-		f2 = 6.2f;
-		f3 = 10.5f;
-		f4 = 2.35f;
-		maximum.getMax(f1, f2, f3, f4);
+		String s1, s2, s3, s4;
+		s1 = "Apple";
+		s2 = "Peach";
+		s3 = "Banana";
+		s4 = "Mango";
+		maximum.getMax(s1, s2, s3, s4);
 	}
 }
